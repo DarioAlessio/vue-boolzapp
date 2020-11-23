@@ -237,8 +237,8 @@ img{
   flex-direction: column;
   padding: 10px 10px 6px 10px;
   height: calc(100% - 100px);
-  overflow: scroll;
   overflow-x: auto;
+  overflow: hidden;
   background: url(https://i.pinimg.com/originals/79/5c/ab/795cabc4647f73b365e2e6eabd0f34dc.png);
 }
 
