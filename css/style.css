@@ -74,7 +74,7 @@ img{
   height: 65px;
   display: flex;
   align-items: center;
-  padding-left: 25px;
+  padding-left: 14px;
 }
 
 .picture-notification{
@@ -104,48 +104,82 @@ img{
 
 /* reaserch name  */
 
-.imput-name{
+.search-chat {
   background-color: #e2e3da;
-  height: 40px;
-  display: flex;
-  justify-content: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.box{
+.search-bar {
+  display: flex;
+  padding:  5px 10px;
+  border-bottom: 1px solid #e2e3da ;
+}
+
+.search-bar > i {
+  width: 34px;
+  height: 24px;
+  background: white;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  padding-left: 12px;
+  color: #afafaf;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid white;
+}
 
+.search-bar input {
+  outline: none;
+  border: none;
+  padding: 1px 1px 1px 2px;
+  flex: 1;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  padding-left: 30px;
+}
+
+/* list name  */
+
+.section-name{
+  height: 50px;
+  display: flex;
+  border-bottom: 2px solid #e2e3da;
+}
+
+.img-chat{
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+
+}
+
+.name-chat{
+  align-items: flex-start;
+  font-size: 14px;
+  padding-left: 25px;
+  padding-top: 5px;
+
+}
+
+.name-chat > h5{
+  font-size: 14px;
+
+}
+
+.name-chat > p{
+  font-size: 10px;
+}
+
+.time-chat{
+  position: relative;
+  left: 120px;
+  font-size: 10px;
+  padding-top: 5px;
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* section right start */
 
 .section-right{
   width: calc(100% - 350px);
