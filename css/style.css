@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/* background color  */
+
+body{
+  height: 100vh;
+}
+
+
+html{
+  background: linear-gradient(to bottom ,#23db98 0%, #23db98 15%, #e9f0ed 15%, #e9f0ed 100%);
+  font-family: sans-serif;
+  overflow: hidden;
+
+}
+
+/* container app */
+
+.container{
+  background-color: red;
+  width: 80%;
+  height: 90%;
+  margin: auto;
+  margin-top: 2.5%;
+
+}
