@@ -45,6 +45,7 @@ html{
   align-items: center;
   padding-left: 10px;
   font-size: 14px;
+  position: relative;
 }
 
 .name-user > span{
@@ -58,8 +59,8 @@ img{
 }
 
 .icon{
-  position: relative;
-  left: 110px;
+  position: absolute;
+  left: 250px;
   padding: 5px;
   color: #afafaf;
 }
@@ -143,6 +144,7 @@ img{
   height: 50px;
   display: flex;
   border-bottom: 2px solid #e2e3da;
+  position: relative;
 }
 
 .img-chat{
@@ -170,8 +172,8 @@ img{
 }
 
 .time-chat{
-  position: relative;
-  left: 120px;
+  position: absolute;
+  left: 250px;
   font-size: 10px;
   padding-top: 5px;
 }
@@ -184,5 +186,48 @@ img{
 .section-right{
   width: calc(100% - 350px);
   height: 100%;
-  background-color: blue;
+
 }
+
+.header-chat{
+  background-color: #e2e3da;
+  height: 50px;
+  display: flex;
+  position: relative;
+  border-left:  1px solid #afafaf ;
+  align-items: center;
+}
+
+.photo-chat{
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.stated-chat{
+  align-items: flex-start;
+  font-size: 14px;
+  padding-left: 15px;
+}
+
+.stated-chat > h5{
+  font-size: 13px;
+}
+
+.stated-chat > p{
+  font-size: 11px;
+}
+
+.icon-chat{
+  right: 10px;
+  padding: 5px;
+  position: absolute;
+  right: 10px;
+  color: #afafaf;
+}
+
+.icon-chat > i{
+  padding-right: 7px;
+}
+
+/* main chat start */
