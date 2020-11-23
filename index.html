@@ -65,7 +65,7 @@
               <span><{{nameList.lastAccess}}</span>
             </li>
         </div>
-        
+
       </div>
 
       <!-- section right -->
@@ -96,7 +96,13 @@
 
         <!-- main chat -->
         <div class="main-chat">
-          <div v-for="selection in nameLists[attivo]">
+          <div v-for="message in nameLists[attivo].selection">
+
+            <div class="">
+              {{message.message}}
+            </div>
+
+            
 
           </div>
 
