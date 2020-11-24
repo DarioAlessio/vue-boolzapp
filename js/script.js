@@ -101,7 +101,12 @@ var app = new Vue({
     risposta: function() {
        let pcReturn = {message: this.textPc , stato: 'ricevuto'};
        this.nameLists[this.attivo].selection.push(pcReturn);
+   },
+   // funzione per cambiare l'indice della conversazione
+   change:function(){
+     
    }
+
   }
 
 
