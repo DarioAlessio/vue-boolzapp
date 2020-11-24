@@ -92,7 +92,6 @@ var app = new Vue({
         let newMess = {message: this.textUser,  stato: 'inviato'};
         this.nameLists[this.attivo].selection.push(newMess);
         setTimeout(this.risposta, 1000);
-        this.attivo = 0;
         this.textUser = "";
       }
 
@@ -101,11 +100,8 @@ var app = new Vue({
     risposta: function() {
        let pcReturn = {message: this.textPc , stato: 'ricevuto'};
        this.nameLists[this.attivo].selection.push(pcReturn);
-   },
-   // funzione per cambiare l'indice della conversazione
-   change:function(){
-     
    }
+
 
   }
 
