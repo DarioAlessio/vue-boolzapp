@@ -142,41 +142,22 @@ img{
 
 .section-name{
   height: 50px;
-  display: flex;
   border-bottom: 2px solid #e2e3da;
-  position: relative;
 }
 
-.img-chat{
+.section-name > img{
   display: flex;
   align-items: center;
   padding-left: 10px;
 
 }
 
-.name-chat{
-  align-items: flex-start;
-  font-size: 14px;
-  padding-left: 25px;
-  padding-top: 5px;
 
-}
 
-.name-chat > h5{
-  font-size: 14px;
 
-}
 
-.name-chat > p{
-  font-size: 10px;
-}
 
-.time-chat{
-  position: absolute;
-  left: 250px;
-  font-size: 10px;
-  padding-top: 5px;
-}
+
 
 
 
@@ -198,7 +179,7 @@ img{
   align-items: center;
 }
 
-.photo-chat{
+.photo-chat > img{
   display: flex;
   align-items: center;
   padding-left: 10px;
@@ -233,13 +214,16 @@ img{
 /* main chat start */
 
 .main-chat{
-  display: flex;
-  flex-direction: column;
-  padding: 10px 10px 6px 10px;
+  padding: 10px;
   height: calc(100% - 100px);
   overflow-x: auto;
   overflow: hidden;
   background: url(https://i.pinimg.com/originals/79/5c/ab/795cabc4647f73b365e2e6eabd0f34dc.png);
+}
+
+.messages{
+  display: flex;
+
 }
 
 
