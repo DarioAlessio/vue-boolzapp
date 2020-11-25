@@ -143,14 +143,22 @@ img{
 .section-name{
   height: 50px;
   border-bottom: 2px solid #e2e3da;
+
 }
 
-.section-name > img{
+li{
+
+  list-style-type: none;
+
+}
+
+.section-name > li{
   display: flex;
   align-items: center;
-  padding-left: 10px;
 
 }
+
+
 
 
 
@@ -214,16 +222,22 @@ img{
 /* main chat start */
 
 .main-chat{
-  padding: 10px;
   height: calc(100% - 100px);
   overflow-x: auto;
   overflow: hidden;
   background: url(https://i.pinimg.com/originals/79/5c/ab/795cabc4647f73b365e2e6eabd0f34dc.png);
 }
 
-.messages{
+.inviato {
   display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
 
+}
+
+.ricevuto{
+  display: flex;
+  padding-left: 40px;
 }
 
 

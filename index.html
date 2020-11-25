@@ -61,8 +61,8 @@
 
             <li v-for="(nameList,index) in nameLists" :class="{active: index===attivo}" @click="attivo=index">
               <img :src="nameList.image">
-              <span>{{nameList.name}}</span>
-              <span><{{nameList.lastAccess}}</span>
+              <span >{{nameList.name}}</span>
+              <span>{{nameList.lastAccess}}</span>
             </li>
         </div>
 
@@ -98,19 +98,13 @@
         <div class="main-chat">
           <div v-for="message in nameLists[attivo].selection">
             <!-- assegnazione classe per gestire la chat -->
-            <div class="messages">
+            <div :class="message.stato">
               {{message.message}}
-
-            </div>
-
-            <div class="state" :class="message.stato">
               {{message.stato}}
 
             </div>
 
-
           </div>
-
 
         </div>
 
