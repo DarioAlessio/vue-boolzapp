@@ -107,7 +107,7 @@ var app = new Vue({
        let pcReturn = {message: this.textPc , stato: 'ricevuto'};
        this.nameLists[this.attivo].selection.push(pcReturn);
    },
-   // funzione per cambiare selezionare nome  chat utente
+   // funzione per  selezionare nome  chat 
    searchUser(){//step processo logico v-if ponte
      this.nameLists.forEach(item => {
        if(item.name.toLowerCase().includes(this.searchName.toLowerCase())) {
