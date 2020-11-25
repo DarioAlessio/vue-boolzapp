@@ -51,7 +51,7 @@
         <div class="search-chat">
           <div class="search-bar">
             <i class="fas fa-search"></i>
-            <input  placeholder="Cerca o inizia una nuova chat" type="text" >
+            <input  v-model="searchName" @keyup="searchUser()" placeholder="Cerca o inizia una nuova chat" type="text" >
           </div>
         </div>
 
@@ -59,12 +59,12 @@
 
         <div class="section-name"><!--div contenitore lista nomi -->
 
-            <li v-for="(nameList,index) in nameLists" :class="{active: index===attivo}" @click="attivo=index">
+            <li v-for="(nameList,index) in nameLists" v-if='nameList.seek' :class="{active: index===attivo}" @click="attivo=index">
               <img :src="nameList.image">
               <span class="name-list-chat">{{nameList.name}}</span>
               <span class="date-list-chat">{{nameList.lastAccess}}</span>
             </li>
-            
+
         </div>
 
       </div>

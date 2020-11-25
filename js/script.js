@@ -4,10 +4,12 @@ var app = new Vue({
   data:{
     textUser:'',
     textPc:'ok',
+    searchName:'',
     attivo: 0,
     nameLists:[{
       name:'Michele',
       lastAccess:'10/10/2020, 20:59',
+      seek: true,
       image: 'https://www.britishinstitutes.it/sedi/skin/default-avatar.jpg',
       selection:[
         {
@@ -27,6 +29,7 @@ var app = new Vue({
     {
       name:'Luisa',
       lastAccess:'10/10/2020, 10:57',
+      seek: true,
       image: 'https://www.britishinstitutes.it/sedi/skin/default-avatar.jpg',
       selection:[
         {
@@ -46,6 +49,7 @@ var app = new Vue({
     {
       name:'Fabio',
       lastAccess:'10/10/2020, 19:44',
+      seek: true,
       image: 'https://www.britishinstitutes.it/sedi/skin/default-avatar.jpg',
       selection:[
         {
@@ -65,6 +69,7 @@ var app = new Vue({
     {
     name:'Samuele',
     lastAccess:'10/10/2020, 02:59',
+    seek: true,
     image: 'https://www.britishinstitutes.it/sedi/skin/default-avatar.jpg',
     selection:[
       {
@@ -92,6 +97,7 @@ var app = new Vue({
         let newMess = {message: this.textUser,  stato: 'inviato'};
         this.nameLists[this.attivo].selection.push(newMess);
         setTimeout(this.risposta, 1000);
+        this.attivo = 0;
         this.textUser = "";
       }
 
@@ -100,6 +106,17 @@ var app = new Vue({
     risposta: function() {
        let pcReturn = {message: this.textPc , stato: 'ricevuto'};
        this.nameLists[this.attivo].selection.push(pcReturn);
+   },
+   // funzione per cambiare l'indice della chat
+
+   searchUser(){//step processo logico v-if ponte 
+     this.nameLists.forEach(item => {
+       if(item.name.toLowerCase().includes(this.searchName.toLowerCase())) {
+         item.seek = true;
+       }else{
+         item.seek = false;
+       }
+     });
    }
 
 
@@ -107,4 +124,4 @@ var app = new Vue({
 
 
 
-  });
+  })
