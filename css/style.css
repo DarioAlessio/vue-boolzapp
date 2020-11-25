@@ -140,34 +140,38 @@ img{
 
 /* list name  */
 
-.section-name{
-  height: 50px;
-  border-bottom: 2px solid #e2e3da;
-
+.section-name li{
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  cursor: pointer;
+  overflow-y: auto;
 }
 
 li{
-
-  list-style-type: none;
-
-}
-
-.section-name > li{
-  display: flex;
-  align-items: center;
+  height: 50px;
+  border-bottom: 2px solid #e2e3da;
+  padding-left: 10px;
+  position: relative;
 
 }
 
+.section-name  img{
+  max-width: 40px;
+  border-radius: 100%;
 
+}
 
+.name-list-chat{
+  padding-left: 8px;
+  font-size: 14px;
+}
 
-
-
-
-
-
-
-
+.date-list-chat{
+  position: absolute;
+  right: 5px;
+  font-size: 11px;
+}
 
 
 /* section right start */
@@ -187,10 +191,11 @@ li{
   align-items: center;
 }
 
-.photo-chat > img{
+.photo-chat  img{
   display: flex;
   align-items: center;
   padding-left: 10px;
+  max-width: 40px;
 }
 
 .stated-chat{
@@ -223,22 +228,20 @@ li{
 
 .main-chat{
   height: calc(100% - 100px);
-  overflow-x: auto;
-  overflow: hidden;
+  overflow-y: auto;
   background: url(https://i.pinimg.com/originals/79/5c/ab/795cabc4647f73b365e2e6eabd0f34dc.png);
 }
 
 .inviato {
   display: flex;
   justify-content: flex-end;
-  padding-right: 40px;
-
 }
 
 .ricevuto{
   display: flex;
   padding-left: 40px;
 }
+
 
 
 

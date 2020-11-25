@@ -61,9 +61,10 @@
 
             <li v-for="(nameList,index) in nameLists" :class="{active: index===attivo}" @click="attivo=index">
               <img :src="nameList.image">
-              <span >{{nameList.name}}</span>
-              <span>{{nameList.lastAccess}}</span>
+              <span class="name-list-chat">{{nameList.name}}</span>
+              <span class="date-list-chat">{{nameList.lastAccess}}</span>
             </li>
+            
         </div>
 
       </div>
