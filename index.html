@@ -98,13 +98,12 @@
         <!-- main chat -->
         <div class="main-chat">
           <div v-for="message in nameLists[attivo].selection">
-            <!-- assegnazione classe per gestire la chat -->
-            <div :class="message.stato">
-              {{message.message}}
-              {{message.stato}}
 
-            </div>
+              <div :class="message.stato">
+                  {{message.message}}
 
+                  {{message.stato}}
+              </div>
           </div>
 
         </div>

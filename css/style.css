@@ -228,18 +228,32 @@ li{
 
 .main-chat{
   height: calc(100% - 100px);
-  overflow-y: auto;
+  /* overflow-y: auto; */
   background: url(https://i.pinimg.com/originals/79/5c/ab/795cabc4647f73b365e2e6eabd0f34dc.png);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.inviato, .ricevuto{
+  border-radius: 15px;
+  padding: 16px 5px;
+  margin-bottom: 8px;
+  position: relative;
 }
 
 .inviato {
-  display: flex;
-  justify-content: flex-end;
+  background: yellow;
+  width: 33%;
+
 }
 
 .ricevuto{
-  display: flex;
-  padding-left: 40px;
+  background: red;
+  width: 33%;
+
 }
 
 
