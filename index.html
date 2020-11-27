@@ -76,7 +76,8 @@
         <div class="header-chat">
 
           <div class="photo-chat">
-            <img :src="nameLists[attivo]">
+
+            <img :src="nameLists[attivo].image">
 
           </div>
 
@@ -97,15 +98,12 @@
 
         <!-- main chat -->
         <div class="main-chat">
-          <div v-for="message in nameLists[attivo].selection">
+            <div  class="row" v-for="message in nameLists[attivo].selection" >
+                    <div :class="message.stato">
+                      {{message.message}}
+                    </div>
 
-              <div :class="message.stato">
-                  {{message.message}}
-
-                  {{message.stato}}
-              </div>
-          </div>
-
+            </div>
         </div>
 
         <!--footer input message -->
